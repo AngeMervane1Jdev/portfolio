@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — Full-Stack Developer & Technical Lead</title>
+    <title>Portfolio — Developpeur Full-Stack & Lead Technique</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -164,6 +164,17 @@
         .hero-content {
             max-width: 900px;
             text-align: center;
+        }
+
+        .hero-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--glass-border);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
         }
 
         .hero-badge {
@@ -773,7 +784,7 @@
             position: absolute;
             inset: 0;
             opacity: 0.1;
-            background-image: 
+            background-image:
                 linear-gradient(30deg, transparent 49%, rgba(255,255,255,0.1) 50%, transparent 51%),
                 linear-gradient(-30deg, transparent 49%, rgba(255,255,255,0.1) 50%, transparent 51%);
             background-size: 60px 60px;
@@ -783,12 +794,12 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">Portfolio</div>
+        <div class="logo">Ange.</div>
         <ul class="nav-links">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Competences</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="index.html" style="color: var(--accent-gold);">FR</a></li>
+            <li><a href="en.html" style="color: var(--accent-gold);">EN</a></li>
         </ul>
     </nav>
 
@@ -796,20 +807,21 @@
     <section class="hero" id="home">
         <div class="hero-decoration circle-1"></div>
         <div class="hero-decoration circle-2"></div>
-        
+
         <div class="hero-content">
+            <img src="me.jpeg" alt="Ange" class="hero-photo">
             <div class="hero-badge">
                 <span class="dot"></span>
-                Available for opportunities
+                Dispo pour bosser ensemble
             </div>
-            <h1>Building <span class="highlight">Digital Experiences</span> That Matter</h1>
+            <h1>Salut, moi c'est <span class="highlight">Ange</span>.<br>Je construis des produits web de A a Z</h1>
             <p class="hero-subtitle">
-                Full-Stack Developer & Technical Lead with 3+ years crafting AI-powered platforms, 
-                mobile applications, and scalable web solutions.
+                Dev Full-Stack, +3 ans a shipper des apps — du chatbot IA au site vitrine anime.
+                J'aime quand ca marche vite et bien.
             </p>
             <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#projects" class="btn btn-primary">Voir ce que j'ai fait</a>
+                <a href="Professional_CV_SoftwareEngineer.docx.pdf" target="_blank" class="btn btn-secondary">Mon CV</a>
             </div>
         </div>
     </section>
@@ -817,11 +829,10 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="section-header">
-            <p class="section-label">Selected Work</p>
-            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-label">Projets</p>
+            <h2 class="section-title">Ce sur quoi j'ai bosse</h2>
             <p class="section-subtitle">
-                A collection of projects showcasing full-stack development, AI integration, 
-                and modern web technologies.
+                Des vrais projets, en prod, avec de vrais utilisateurs.
             </p>
         </div>
 
@@ -837,12 +848,13 @@
                         <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
                         </svg>
-                        EdTech Platform
+                        Plateforme EdTech
                     </div>
                     <h3 class="project-title">Logiglish</h3>
                     <p class="project-description">
-                        A comprehensive English learning platform for Japanese native speakers featuring 
-                        real-time booking, Google Calendar integration, and live chat functionality.
+                        Plateforme d'apprentissage d'anglais pour des japonais. Les etudiants reservent
+                        des cours, les profs gerent leur planning via Google Calendar, et tout le monde
+                        discute en direct.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Next.js 16</span>
@@ -856,25 +868,25 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Multi-role authentication (Student, Instructor, Admin)
+                            3 roles distincts : Etudiant, Instructeur, Admin
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Google Calendar API with automatic Meet links
+                            Synchro Google Calendar + liens Meet generes auto
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Real-time messaging with Supabase Realtime
+                            Chat en temps reel (Supabase Realtime)
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Automated email reminders via SendGrid + Vercel Cron
+                            Rappels email auto (SendGrid + Cron Jobs)
                         </div>
                     </div>
                     <div class="project-links">
@@ -882,21 +894,21 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
-                            Live Demo
+                            Voir le site
                         </a>
                     </div>
                     <div class="feature-highlights">
                         <div class="highlight-item">
                             <div class="highlight-value">3</div>
-                            <div class="highlight-label">User Roles</div>
+                            <div class="highlight-label">Roles Utilisateur</div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-value">ICS</div>
-                            <div class="highlight-label">Calendar Export</div>
+                            <div class="highlight-label">Export Calendrier</div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-value">24h</div>
-                            <div class="highlight-label">Auto Reminders</div>
+                            <div class="highlight-label">Rappels Auto</div>
                         </div>
                     </div>
                 </div>
@@ -913,12 +925,13 @@
                         <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        AI Platform • Featured
+                        Plateforme IA
                     </div>
                     <h3 class="project-title">N-Touch</h3>
                     <p class="project-description">
-                        An AI-powered communication platform for international residents featuring a custom 
-                        RAG pipeline with Claude integration, gamification, and multi-channel notifications.
+                        App de communication pour des residents etrangers au Japon. Un chatbot IA repond
+                        a leurs questions en se basant sur des docs internes (RAG), avec un systeme de
+                        points et de badges pour encourager l'engagement.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Next.js 15</span>
@@ -933,25 +946,25 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Full RAG pipeline: PDF/DOCX/URL → Embeddings → Vector Search
+                            Pipeline RAG maison : upload PDF/DOCX → embeddings → recherche vectorielle
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Claude-powered response generation with streaming
+                            Reponses generees par Claude en streaming
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Gamification with ranking system (Bronze → Platinum)
+                            Systeme de gamification : Bronze → Argent → Or → Platine
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            PWA with offline-first architecture & push notifications
+                            PWA offline-first avec notifications push
                         </div>
                     </div>
                     <div class="project-links">
@@ -959,21 +972,21 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
-                            Live Demo
+                            Voir le site
                         </a>
                     </div>
                     <div class="feature-highlights">
                         <div class="highlight-item">
                             <div class="highlight-value">1536</div>
-                            <div class="highlight-label">Vector Dims</div>
+                            <div class="highlight-label">Dims Vectorielles</div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-value">11+</div>
-                            <div class="highlight-label">Notification Types</div>
+                            <div class="highlight-label">Types de Notifs</div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-value">KYC</div>
-                            <div class="highlight-label">Identity Verified</div>
+                            <div class="highlight-label">Identite Verifiee</div>
                         </div>
                     </div>
                 </div>
@@ -990,12 +1003,13 @@
                         <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                         </svg>
-                        Events & Networking
+                        Evenements & Reseautage
                     </div>
                     <h3 class="project-title">N-Link</h3>
                     <p class="project-description">
-                        A full-stack events hub with digital business cards, live video conferencing, 
-                        and real-time interactions. Built with NestJS backend and Nuxt frontend.
+                        Plateforme d'evenements pro : les participants creent leurs cartes de visite
+                        numeriques, rejoignent des events video en live, et echangent leurs contacts
+                        en un clic. Backend NestJS, frontend Nuxt.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">NestJS</span>
@@ -1010,43 +1024,43 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Digital business cards with customizable themes
+                            Cartes de visite numeriques avec themes custom
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Live video events with Stream.io integration
+                            Events video en direct via Stream.io
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Real-time chat & card sharing via WebSocket
+                            Chat temps reel & partage de cartes via WebSocket
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Multi-tenant architecture with CASL permissions
+                            Multi-tenant avec gestion de permissions (CASL)
                         </div>
                     </div>
                     <div class="project-links">
-                        <a href="https://n-link-web.vercel.app/" target="_blank" class="project-link primary">
+                        <a href="https://n-link-web.vercel.app/account" target="_blank" class="project-link primary">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
-                            Live Demo
+                            Voir le site
                         </a>
                     </div>
                     <div class="feature-highlights">
                         <div class="highlight-item">
                             <div class="highlight-value">i18n</div>
-                            <div class="highlight-label">Multilingual</div>
+                            <div class="highlight-label">Multilingue</div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-value">Live</div>
-                            <div class="highlight-label">Video Calls</div>
+                            <div class="highlight-label">Appels Video</div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-value">CASL</div>
@@ -1067,12 +1081,13 @@
                         <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                         </svg>
-                        Non-Profit • Showcase
+                        Association • Vitrine
                     </div>
                     <h3 class="project-title">Fondation Reine Adjignon</h3>
                     <p class="project-description">
-                        A beautifully crafted showcase website for a charitable foundation, featuring 
-                        advanced animations, smooth scrolling, and bilingual support.
+                        Site vitrine pour une fondation caritative beninoise. Beaucoup de travail
+                        sur les animations (Framer Motion), le smooth scroll (Lenis), et le
+                        support bilingue FR/EN.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Next.js 16</span>
@@ -1086,25 +1101,25 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Advanced Framer Motion animations (parallax, stagger, morph)
+                            Parallaxe, stagger, morph avec Framer Motion
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Smooth scroll with Lenis library
+                            Smooth scroll avec Lenis
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Magnetic buttons & text reveal effects
+                            Boutons magnetiques & text reveal effects
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Bilingual FR/EN with React Context
+                            Switch FR/EN via React Context
                         </div>
                     </div>
                     <div class="project-links">
@@ -1112,21 +1127,21 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
-                            Live Demo
+                            Voir le site
                         </a>
                     </div>
                     <div class="feature-highlights">
                         <div class="highlight-item">
                             <div class="highlight-value">20+</div>
-                            <div class="highlight-label">CSS Animations</div>
+                            <div class="highlight-label">Animations CSS</div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-value">FR/EN</div>
-                            <div class="highlight-label">Bilingual</div>
+                            <div class="highlight-label">Bilingue</div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-value">Lenis</div>
-                            <div class="highlight-label">Smooth Scroll</div>
+                            <div class="highlight-label">Scroll Fluide</div>
                         </div>
                     </div>
                 </div>
@@ -1137,10 +1152,10 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="section-header">
-            <p class="section-label">Expertise</p>
-            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-label">Stack</p>
+            <h2 class="section-title">Mes outils au quotidien</h2>
             <p class="section-subtitle">
-                A comprehensive toolkit for building modern, scalable applications.
+                Ce avec quoi je travaille le plus souvent.
             </p>
         </div>
 
@@ -1151,7 +1166,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                     </svg>
                 </div>
-                <h3>Mobile Development</h3>
+                <h3>Developpement Mobile</h3>
                 <div class="skill-list">
                     <span class="skill-item">Flutter</span>
                     <span class="skill-item">Dart</span>
@@ -1199,13 +1214,13 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                 </div>
-                <h3>AI & Machine Learning</h3>
+                <h3>IA & Machine Learning</h3>
                 <div class="skill-list">
                     <span class="skill-item">Claude API</span>
                     <span class="skill-item">OpenAI</span>
-                    <span class="skill-item">RAG Pipelines</span>
+                    <span class="skill-item">Pipelines RAG</span>
                     <span class="skill-item">TensorFlow</span>
-                    <span class="skill-item">Vector Search</span>
+                    <span class="skill-item">Recherche Vectorielle</span>
                 </div>
             </div>
 
@@ -1231,11 +1246,11 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                     </svg>
                 </div>
-                <h3>Real-time & APIs</h3>
+                <h3>Temps Reel & APIs</h3>
                 <div class="skill-list">
                     <span class="skill-item">WebSocket</span>
                     <span class="skill-item">Socket.io</span>
-                    <span class="skill-item">REST APIs</span>
+                    <span class="skill-item">APIs REST</span>
                     <span class="skill-item">GraphQL</span>
                     <span class="skill-item">Stream.io</span>
                 </div>
@@ -1246,11 +1261,11 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="contact-content">
-            <p class="section-label">Get in Touch</p>
-            <h2 class="section-title">Let's Build Something Great</h2>
+            <p class="section-label">Contact</p>
+            <h2 class="section-title">On bosse ensemble ?</h2>
             <p class="section-subtitle">
-                Open to new opportunities, collaborations, and interesting projects. 
-                Feel free to reach out!
+                Je suis ouvert aux missions freelance, collaborations, ou tout projet
+                qui a du sens. Ecrivez-moi, je reponds vite.
             </p>
             <div class="contact-links">
                 <a href="mailto:angenoutchogbe@gmail.com" class="contact-link" title="Email">
@@ -1274,7 +1289,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 — Designed & Built with passion</p>
+        <p>&copy; 2025 Ange Noutchogbe</p>
     </footer>
 
     <script>
@@ -1312,13 +1327,13 @@
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             const currentScroll = window.pageYOffset;
-            
+
             if (currentScroll > 100) {
                 nav.style.padding = '1rem 4rem';
             } else {
                 nav.style.padding = '1.5rem 4rem';
             }
-            
+
             lastScroll = currentScroll;
         });
     </script>
