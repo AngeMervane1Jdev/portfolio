@@ -374,6 +374,17 @@
             gap: 1rem;
         }
 
+        .demo-credentials {
+            margin-top: 0.75rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .demo-credentials span {
+            color: var(--text-secondary);
+        }
+
         .project-link {
             display: inline-flex;
             align-items: center;
@@ -619,6 +630,10 @@
             background: linear-gradient(135deg, #3d2d1f 0%, #2e1a0f 50%, #4f3d2a 100%);
         }
 
+        .project-visual.nsavoir {
+            background: linear-gradient(135deg, #1a2a1a 0%, #0f1f0f 50%, #1f2e1a 100%);
+        }
+
     </style>
 </head>
 <body>
@@ -637,7 +652,7 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <img src="me.jpeg" alt="Cyrille" class="hero-photo">
-            <h1>Hey, I'm <span class="highlight">Cyrille Cyrille Noutchogbe</span>.<br>I build web products end to end</h1>
+            <h1>Hey, I'm <span class="highlight">Cyrille Noutchogbe</span>.<br>I build web products end to end</h1>
             <p class="hero-subtitle">
                 Full-stack dev, 3+ years shipping apps — from AI chatbots to animated showcase sites.
                 I like things that work fast and look good.
@@ -830,7 +845,7 @@
                     <h3 class="project-title">N-Link</h3>
                     <p class="project-description">
                         Professional events platform: attendees create digital business cards,
-                        join live video events, and exchCyrille contacts in one click.
+                        join live video events, and exchange contacts in one click.
                         NestJS backend, Nuxt frontend.
                     </p>
                     <div class="project-tech">
@@ -964,6 +979,86 @@
                         <div class="highlight-item">
                             <div class="highlight-value">Lenis</div>
                             <div class="highlight-label">Smooth Scroll</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5: N Savoir+ -->
+            <article class="project-card">
+                <div class="project-visual nsavoir">
+                    <img src="nsavoir.png"/>
+                    <span class="project-number">05</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-type">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+                        </svg>
+                        AI • Offline-first
+                    </div>
+                    <h3 class="project-title">N Savoir+</h3>
+                    <p class="project-description">
+                        AI tutoring platform built for areas with limited or no internet.
+                        Runs on an OrangePi 5 powered by a solar kit, local LLMs (Mistral 7B via llama.cpp),
+                        RAG over course PDFs, falls back to Groq API when online.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">llama.cpp</span>
+                        <span class="tech-tag">FAISS</span>
+                        <span class="tech-tag">Groq API</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Local LLM inference: Mistral 7B Q4 / Phi-3 Mini via llama.cpp
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            RAG pipeline: PDF → multilingual embeddings → FAISS per course
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Runs offline on OrangePi 5 (ARM) + solar kit
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Hybrid mode: local LLM offline, Groq (Llama 3) when connected
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://n-savoir.fly.dev/" target="_blank" class="project-link primary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            See it live
+                        </a>
+                    </div>
+                    <p class="demo-credentials">Demo: <span>Cyanno</span> / <span>6275</span></p>
+                    <div class="feature-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-value">ARM</div>
+                            <div class="highlight-label">OrangePi 5</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-value">7B</div>
+                            <div class="highlight-label">Local LLM</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-value">100%</div>
+                            <div class="highlight-label">Offline-ready</div>
                         </div>
                     </div>
                 </div>

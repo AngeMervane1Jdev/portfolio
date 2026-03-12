@@ -374,6 +374,17 @@
             gap: 1rem;
         }
 
+        .demo-credentials {
+            margin-top: 0.75rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .demo-credentials span {
+            color: var(--text-secondary);
+        }
+
         .project-link {
             display: inline-flex;
             align-items: center;
@@ -616,6 +627,10 @@
             background: linear-gradient(135deg, #3d2d1f 0%, #2e1a0f 50%, #4f3d2a 100%);
         }
 
+        .project-visual.nsavoir {
+            background: linear-gradient(135deg, #1a2a1a 0%, #0f1f0f 50%, #1f2e1a 100%);
+        }
+
     </style>
 </head>
 <body>
@@ -634,7 +649,7 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <img src="me.jpeg" alt="Cyrille" class="hero-photo">
-            <h1>Salut, moi c'est <span class="highlight">Cyrille Cyrille Noutchogbe</span>.<br>Je construis des produits web de A a Z</h1>
+            <h1>Salut, moi c'est <span class="highlight">Cyrille Noutchogbe</span>.<br>Je construis des produits web de A a Z</h1>
             <p class="hero-subtitle">
                 Dev Full-Stack, +3 ans a shipper des apps — du chatbot IA au site vitrine anime.
                 J'aime quand ca marche vite et bien.
@@ -748,7 +763,7 @@
                     </div>
                     <h3 class="project-title">N-Touch</h3>
                     <p class="project-description">
-                        App de communication pour des residents etrCyrillers au Japon. Un chatbot IA repond
+                        App de communication pour des residents étrangers au Japon. Un chatbot IA repond
                         a leurs questions en se basant sur des docs internes (RAG), avec un systeme de
                         points et de badges pour encourager l'engagement.
                     </p>
@@ -827,7 +842,7 @@
                     <h3 class="project-title">N-Link</h3>
                     <p class="project-description">
                         Plateforme d'evenements pro : les participants creent leurs cartes de visite
-                        numeriques, rejoignent des events video en live, et echCyrillent leurs contacts
+                        numeriques, rejoignent des events video en live, et échanger leurs contacts
                         en un clic. Backend NestJS, frontend Nuxt.
                     </p>
                     <div class="project-tech">
@@ -961,6 +976,86 @@
                         <div class="highlight-item">
                             <div class="highlight-value">Lenis</div>
                             <div class="highlight-label">Scroll Fluide</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5: N Savoir+ -->
+            <article class="project-card">
+                <div class="project-visual nsavoir">
+                    <img src="nsavoir.png"/>
+                    <span class="project-number">05</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-type">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+                        </svg>
+                        IA • Offline-first
+                    </div>
+                    <h3 class="project-title">N Savoir+</h3>
+                    <p class="project-description">
+                        Plateforme de tutorat IA pensee pour les zones sans connexion stable.
+                        Tourne sur OrangePi 5 alimente par un kit solaire — LLM local (Mistral 7B via llama.cpp),
+                        RAG sur les PDFs de cours, bascule sur Groq API quand internet est disponible.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">llama.cpp</span>
+                        <span class="tech-tag">FAISS</span>
+                        <span class="tech-tag">Groq API</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Inference LLM locale : Mistral 7B Q4 / Phi-3 Mini via llama.cpp
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Pipeline RAG : PDF → embeddings multilingues → FAISS par cours
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Fonctionne offline sur OrangePi 5 (ARM) + kit solaire
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Mode hybride : LLM local hors-ligne, Groq (Llama 3) connecte
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://n-savoir.fly.dev/" target="_blank" class="project-link primary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            Voir le site
+                        </a>
+                    </div>
+                    <p class="demo-credentials">Demo : <span>Cyanno</span> / <span>6275</span></p>
+                    <div class="feature-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-value">ARM</div>
+                            <div class="highlight-label">OrangePi 5</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-value">7B</div>
+                            <div class="highlight-label">LLM Local</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-value">100%</div>
+                            <div class="highlight-label">Offline-ready</div>
                         </div>
                     </div>
                 </div>
