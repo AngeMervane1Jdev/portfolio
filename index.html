@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — Full-Stack Developer & Technical Lead</title>
+    <title>Portfolio | Full-Stack Developer & Technical Lead</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #0a0a0f;
-            --bg-secondary: #12121a;
-            --bg-tertiary: #1a1a25;
-            --text-primary: #f5f5f7;
-            --text-secondary: #a1a1aa;
-            --text-muted: #71717a;
-            --accent-main: #e07a5f;
-            --accent-secondary: #81b29a;
-            --accent-muted: #f2cc8f;
-            --glass-bg: rgba(255, 255, 255, 0.02);
-            --glass-border: rgba(255, 255, 255, 0.06);
-            --gradient-mesh: radial-gradient(at 40% 20%, hsla(12,70%,50%,0.04) 0px, transparent 50%),
-                            radial-gradient(at 80% 0%, hsla(153,30%,50%,0.04) 0px, transparent 50%);
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-tertiary: #141414;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.65);
+            --text-muted: rgba(255, 255, 255, 0.45);
+            --accent-main: #dc2626;
+            --accent-secondary: #ffffff;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.09);
+            --gradient-mesh: radial-gradient(at 40% 20%, rgba(220, 38, 38, 0.08) 0px, transparent 50%),
+                            radial-gradient(at 80% 0%, rgba(220, 38, 38, 0.05) 0px, transparent 50%);
         }
 
         * {
@@ -80,7 +79,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(10, 10, 15, 0.8);
+            background: rgba(0, 0, 0, 0.85);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
             transition: all 0.3s ease;
@@ -145,13 +144,18 @@
             text-align: center;
         }
 
-        .hero-photo {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--glass-border);
-            margin-bottom: 2rem;
+        .hero-eyebrow {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--accent-main);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 1.5rem;
+            padding: 0.4rem 1rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 100px;
+            background: var(--glass-bg);
         }
 
         .hero h1 {
@@ -615,23 +619,23 @@
 
         /* Project visual placeholders with gradients */
         .project-visual.logiglish {
-            background: linear-gradient(135deg, #1e3a5f 0%, #0d1b2a 50%, #1b263b 100%);
+            background: linear-gradient(135deg, #1a0505 0%, #000000 50%, #2a0808 100%);
         }
 
         .project-visual.ntouch {
-            background: linear-gradient(135deg, #2d1f3d 0%, #1a0f2e 50%, #3d2a4f 100%);
+            background: linear-gradient(135deg, #2a0808 0%, #000000 50%, #1a0505 100%);
         }
 
         .project-visual.nlink {
-            background: linear-gradient(135deg, #1f2d3d 0%, #0f1a2e 50%, #2a3d4f 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a0505 50%, #0a0a0a 100%);
         }
 
         .project-visual.fondation {
-            background: linear-gradient(135deg, #3d2d1f 0%, #2e1a0f 50%, #4f3d2a 100%);
+            background: linear-gradient(135deg, #1a0505 0%, #0a0a0a 50%, #2a0808 100%);
         }
 
         .project-visual.nsavoir {
-            background: linear-gradient(135deg, #1a2a1a 0%, #0f1f0f 50%, #1f2e1a 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #000000 50%, #1a0505 100%);
         }
 
     </style>
@@ -651,15 +655,16 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <img src="me.jpeg" alt="Cyrille" class="hero-photo">
-            <h1>Hey, I'm <span class="highlight">Cyrille Noutchogbe</span>.<br>I build web products end to end</h1>
+            <span class="hero-eyebrow">Cyrille Noutchogbe | Full-Stack Engineer</span>
+            <h1>Engineering <span class="highlight">production-grade</span><br>web applications, end to end.</h1>
             <p class="hero-subtitle">
-                Full-stack dev, 3+ years shipping apps — from AI chatbots to animated showcase sites.
-                I like things that work fast and look good.
+                Three years of experience designing, building, and shipping AI platforms,
+                real-time systems, and enterprise web products, with a focus on performance,
+                reliability, and thoughtful user experience.
             </p>
             <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">See my work</a>
-                <a href="Professional_CV_SoftwareEngineer.docx.pdf" target="_blank" class="btn btn-secondary">My CV</a>
+                <a href="#projects" class="btn btn-primary">View selected work</a>
+                <a href="Professional_CV_SoftwareEngineer.docx.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
             </div>
         </div>
     </section>
@@ -667,85 +672,89 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="section-header">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Selected Work</h2>
             <p class="section-subtitle">
-                Stuff I built that people actually use.
+                A selection of production projects delivered across EdTech, AI, and enterprise platforms.
             </p>
         </div>
 
         <div class="projects-container">
-            <!-- Project 1: Logiglish -->
+            <!-- Project 1: N Savoir+ -->
             <article class="project-card">
-                <div class="project-visual logiglish">
-                    <img src="logiglish.png"/>
+                <div class="project-visual nsavoir">
+                    <img src="nsavoir.png"/>
                     <span class="project-number">01</span>
                 </div>
                 <div class="project-info">
                     <div class="project-type">
                         <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
                         </svg>
-                        EdTech Platform
+                        AI • Offline-first
                     </div>
-                    <h3 class="project-title">Logiglish</h3>
+                    <h3 class="project-title">N Savoir+</h3>
                     <p class="project-description">
-                        English learning platform for Japanese speakers. Students book lessons,
-                        teachers manage their schedule through Google Calendar, and everyone
-                        chats in real time.
+                        An AI tutoring platform designed for regions with limited or no internet access.
+                        Deployed on an OrangePi 5 powered by a solar kit, running local LLMs
+                        (Mistral 7B via llama.cpp) with RAG over course PDFs, and falling back
+                        to the Groq API when connectivity is available.
                     </p>
                     <div class="project-tech">
-                        <span class="tech-tag">Next.js 16</span>
-                        <span class="tech-tag">React 19</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Supabase</span>
-                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">llama.cpp</span>
+                        <span class="tech-tag">FAISS</span>
+                        <span class="tech-tag">Groq API</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">SQLite</span>
                     </div>
                     <div class="project-features">
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            3 distinct roles: Student, Instructor, Admin
+                            Local LLM inference: Mistral 7B Q4 and Phi-3 Mini via llama.cpp
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Google Calendar sync + auto-generated Meet links
+                            RAG pipeline: PDF ingestion, multilingual embeddings, per-course FAISS index
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Real-time chat (Supabase Realtime)
+                            Fully offline operation on OrangePi 5 (ARM) with solar power kit
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Auto email reminders (SendGrid + Cron Jobs)
+                            Hybrid mode: local LLM offline, Groq (Llama 3) when online
                         </div>
                     </div>
                     <div class="project-links">
-                        <a href="https://englishgo-vqni.onrender.com" target="_blank" class="project-link primary">
+                        <a href="https://n-savoir.fly.dev/" target="_blank" class="project-link primary">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
-                            See it live
+                            View live project
                         </a>
                     </div>
+                    <p class="demo-credentials">Demo: <span>Cyanno</span> / <span>6275</span></p>
                     <div class="feature-highlights">
                         <div class="highlight-item">
-                            <div class="highlight-value">3</div>
-                            <div class="highlight-label">User Roles</div>
+                            <div class="highlight-value">ARM</div>
+                            <div class="highlight-label">OrangePi 5</div>
                         </div>
                         <div class="highlight-item">
-                            <div class="highlight-value">ICS</div>
-                            <div class="highlight-label">Calendar Export</div>
+                            <div class="highlight-value">7B</div>
+                            <div class="highlight-label">Local LLM</div>
                         </div>
                         <div class="highlight-item">
-                            <div class="highlight-value">24h</div>
-                            <div class="highlight-label">Auto Reminders</div>
+                            <div class="highlight-value">100%</div>
+                            <div class="highlight-label">Offline-ready</div>
                         </div>
                     </div>
                 </div>
@@ -766,9 +775,9 @@
                     </div>
                     <h3 class="project-title">N-Touch</h3>
                     <p class="project-description">
-                        Communication app for foreign residents in Japan. An AI chatbot answers
-                        their questions using internal docs (RAG), with a points and badges system
-                        to drive engagement.
+                        A communication platform serving foreign residents in Japan. An AI assistant
+                        answers user questions grounded in internal documentation (RAG architecture),
+                        paired with a points and badges system to sustain engagement.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Next.js 15</span>
@@ -783,25 +792,25 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Custom RAG pipeline: upload PDF/DOCX → embeddings → vector search
+                            Custom RAG pipeline: PDF/DOCX ingestion, embeddings, vector search
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Claude-powered responses with streaming
+                            Claude-powered streaming responses
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Gamification system: Bronze → Silver → Gold → Platinum
+                            Four-tier gamification system: Bronze, Silver, Gold, Platinum
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Offline-first PWA with push notifications
+                            Offline-first Progressive Web App with push notifications
                         </div>
                     </div>
                     <div class="project-links">
@@ -809,7 +818,7 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
-                            See it live
+                            View live project
                         </a>
                     </div>
                     <div class="feature-highlights">
@@ -844,9 +853,9 @@
                     </div>
                     <h3 class="project-title">N-Link</h3>
                     <p class="project-description">
-                        Professional events platform: attendees create digital business cards,
-                        join live video events, and exchange contacts in one click.
-                        NestJS backend, Nuxt frontend.
+                        A professional events platform where attendees create digital business cards,
+                        join live video events, and exchange contacts in a single interaction.
+                        NestJS backend with a Nuxt 3 frontend.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">NestJS</span>
@@ -861,25 +870,25 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Digital business cards with custom themes
+                            Customizable digital business cards with branded themes
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Live video events via Stream.io
+                            Live video event sessions via Stream.io
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Real-time chat & card sharing via WebSocket
+                            Real-time messaging and card exchange over WebSocket
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Multi-tenant with CASL permission management
+                            Multi-tenant architecture with CASL-based permissions
                         </div>
                     </div>
                     <div class="project-links">
@@ -887,7 +896,7 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
-                            See it live
+                            View live project
                         </a>
                     </div>
                     <div class="feature-highlights">
@@ -907,11 +916,88 @@
                 </div>
             </article>
 
-            <!-- Project 4: Fondation Reine Adjignon -->
+            <!-- Project 4: Logiglish -->
+            <article class="project-card">
+                <div class="project-visual logiglish">
+                    <img src="logiglish.png"/>
+                    <span class="project-number">04</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-type">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        EdTech Platform
+                    </div>
+                    <h3 class="project-title">Logiglish</h3>
+                    <p class="project-description">
+                        An English-learning platform designed for Japanese speakers. Students book lessons,
+                        instructors manage their availability through Google Calendar, and both parties
+                        communicate via real-time messaging.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js 16</span>
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Three role-based access levels: Student, Instructor, Admin
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Google Calendar synchronization with auto-generated Meet links
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Real-time messaging powered by Supabase Realtime
+                        </div>
+                        <div class="feature-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Automated email reminders via SendGrid and scheduled Cron jobs
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://englishgo-vqni.onrender.com" target="_blank" class="project-link primary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            View live project
+                        </a>
+                    </div>
+                    <div class="feature-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-value">3</div>
+                            <div class="highlight-label">User Roles</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-value">ICS</div>
+                            <div class="highlight-label">Calendar Export</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-value">24h</div>
+                            <div class="highlight-label">Auto Reminders</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5: Fondation Reine Adjignon -->
             <article class="project-card">
                 <div class="project-visual fondation">
                     <img src="fondationreineadjignon.png"/>
-                    <span class="project-number">04</span>
+                    <span class="project-number">05</span>
                 </div>
                 <div class="project-info">
                     <div class="project-type">
@@ -922,9 +1008,9 @@
                     </div>
                     <h3 class="project-title">Fondation Reine Adjignon</h3>
                     <p class="project-description">
-                        Showcase site for a charity foundation from Benin. Lots of work on
-                        animations (Framer Motion), smooth scrolling (Lenis), and
-                        bilingual FR/EN support.
+                        A corporate showcase website for a Beninese charitable foundation,
+                        featuring refined motion design (Framer Motion), smooth scrolling (Lenis),
+                        and full bilingual FR/EN support.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Next.js 16</span>
@@ -938,25 +1024,25 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Parallax, stagger, morph with Framer Motion
+                            Parallax, stagger, and morph effects built with Framer Motion
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Smooth scroll with Lenis
+                            Native-feeling smooth scrolling via Lenis
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            Magnetic buttons & text reveal effects
+                            Magnetic buttons and text reveal animations
                         </div>
                         <div class="feature-item">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            FR/EN switch via React Context
+                            FR/EN localization managed through React Context
                         </div>
                     </div>
                     <div class="project-links">
@@ -964,7 +1050,7 @@
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
-                            See it live
+                            View live project
                         </a>
                     </div>
                     <div class="feature-highlights">
@@ -983,95 +1069,15 @@
                     </div>
                 </div>
             </article>
-
-            <!-- Project 5: N Savoir+ -->
-            <article class="project-card">
-                <div class="project-visual nsavoir">
-                    <img src="nsavoir.png"/>
-                    <span class="project-number">05</span>
-                </div>
-                <div class="project-info">
-                    <div class="project-type">
-                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
-                        </svg>
-                        AI • Offline-first
-                    </div>
-                    <h3 class="project-title">N Savoir+</h3>
-                    <p class="project-description">
-                        AI tutoring platform built for areas with limited or no internet.
-                        Runs on an OrangePi 5 powered by a solar kit, local LLMs (Mistral 7B via llama.cpp),
-                        RAG over course PDFs, falls back to Groq API when online.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">llama.cpp</span>
-                        <span class="tech-tag">FAISS</span>
-                        <span class="tech-tag">Groq API</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">SQLite</span>
-                    </div>
-                    <div class="project-features">
-                        <div class="feature-item">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Local LLM inference: Mistral 7B Q4 / Phi-3 Mini via llama.cpp
-                        </div>
-                        <div class="feature-item">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            RAG pipeline: PDF → multilingual embeddings → FAISS per course
-                        </div>
-                        <div class="feature-item">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Runs offline on OrangePi 5 (ARM) + solar kit
-                        </div>
-                        <div class="feature-item">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Hybrid mode: local LLM offline, Groq (Llama 3) when connected
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://n-savoir.fly.dev/" target="_blank" class="project-link primary">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                            </svg>
-                            See it live
-                        </a>
-                    </div>
-                    <p class="demo-credentials">Demo: <span>Cyanno</span> / <span>6275</span></p>
-                    <div class="feature-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-value">ARM</div>
-                            <div class="highlight-label">OrangePi 5</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-value">7B</div>
-                            <div class="highlight-label">Local LLM</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-value">100%</div>
-                            <div class="highlight-label">Offline-ready</div>
-                        </div>
-                    </div>
-                </div>
-            </article>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <div class="section-header">
-            <h2 class="section-title">Stack</h2>
+            <h2 class="section-title">Technical Stack</h2>
             <p class="section-subtitle">
-                What I actually use, not what I learned once in a tutorial.
+                Technologies and tools applied daily across production projects.
             </p>
         </div>
 
@@ -1177,10 +1183,10 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="contact-content">
-            <h2 class="section-title">Say hi</h2>
+            <h2 class="section-title">Get in Touch</h2>
             <p class="section-subtitle">
-                Got a project? Need a dev? Just want to chat about tech?
-                I read everything.
+                Currently open to new engagements and long-term roles.
+                Reach out by email, WhatsApp, or GitHub. I respond to every message.
             </p>
             <div class="contact-links">
                 <a href="mailto:Cyrillenoutchogbe@gmail.com" class="contact-link" title="Email">
